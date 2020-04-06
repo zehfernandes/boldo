@@ -1,0 +1,28 @@
+<script>
+  // This file is auto-generated. don't edit.
+  import { setContext, onMount } from "svelte";
+	<% _.forEach(imports, function(e) { %>
+  import <%= e %> from "./_fromFigma/<%= e %>.svelte";
+	<% }); %>
+  import App from "./App.svelte";
+
+  let mountFigma = false;
+  let fromFigma;
+  let <%= variables %>
+
+  // Add Your Globlas here
+  setContext("key", {
+    getDesign: () => fromFigma
+  });
+
+  onMount(() => {
+    fromFigma = { <%= variables %> };
+    mountFigma = true;
+  });
+</script>
+
+<%= content %>
+
+{#if mountFigma}
+  <App />
+{/if}

@@ -1,0 +1,33 @@
+{
+  "name": "boldo",
+  "version": "0.0.1",
+  "scripts": {
+    "link": "node ./boldo/scripts/link-figma.js",
+    "build": "rollup -c",
+    "start": "sirv public",
+    "dev": "concurrently \"node ./boldo/scripts/watch-figma.js\" \"rollup -c -w\""
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "concurrently": "^5.1.0",
+    "prettier": "^1.19.1",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0",
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "date-fns": "^2.11.0",
+    "dotenv": "^8.2.0",
+    "figma-js": "^1.9.0",
+    "inquirer": "^7.1.0",
+    "lodash": "^4.17.15",
+    "mkdirp": "^1.0.3"
+  },
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "sirv-cli": "^0.4.4"
+  }
+}

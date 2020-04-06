@@ -1,0 +1,11 @@
+<script>
+  // Title.svelte
+  // This file is auto-generated. if you edit you loose the link with figma. To do that add into excludes.json\
+	import Layer from "../../boldo/components/Layer.svelte";
+	
+	<% _.forEach(exports, function(e) { %>
+	export let <%= e %> = undefined;
+	<% }); %>
+</script>
+
+<%= content %>

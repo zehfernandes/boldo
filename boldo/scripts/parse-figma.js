@@ -15,18 +15,16 @@ function parseFigma(data) {
 
   // Files
   parsedTree.forEach((el) => {
-    let dirpath = path.join(
-      __dirname,
-      "../../project/_fromFigma",
-      `${el.fileName}.svelte`
-    );
-    renderTemplate(dirpath, el, "component.template");
+    let dirpath = path.join(__dirname, "../../project/_fromFigma");
+    let fileName = `${el.fileName}.svelte`;
+    renderTemplate(dirpath, fileName, el, "component.template");
   });
 
   // Wrapper
   const wrapperContent = generateWrapper(parsedTree);
-  let dirpath = path.join(__dirname, "../../project/", "_Wrapper.svelte");
-  renderTemplate(dirpath, wrapperContent, "wrapper.template");
+  let dirpath = path.join(__dirname, "../../project/");
+  let fileName = "_Wrapper.svelte";
+  renderTemplate(dirpath, fileName, wrapperContent, "wrapper.template");
 }
 
 /* -----------------------------------
@@ -177,20 +175,11 @@ module.exports = {
   parseFigma,
 };
 
-// GET just the frames
-// Ignore some names [ok]
-// New file [ok]
-// components
-// First frame [ok]
-// Reuse component
-// Instance grab component
-// Find similar layer?
-// Function para gerar single file [ok]
-// Objeto para gerar o Wrapper.js [ok]
-// Gerenciar cache
-// Watch arquivo do figma [ok]
+// TODO:
+// Create a components file and reuse the component
+// Do we need cache?
 
-// Naming:
+// Figma Naming:
 // <> new component
 // * exlude import
 // -img transform image

@@ -37,7 +37,7 @@ Navigate to [localhost:5000](http://localhost:5000). You should see your app run
 
 ## Walkthrough
 
-For easy testing and iteration, To be easy to test and iterate we are using a single repository with four touchpoints: the prototype you are working on [`./project`](`./project`), the scripts to fetch and parse Figma [`boldo/scripts`](`boldo/scripts`), the components with methods and syntax sugar [`/boldo/components`](`/boldo/components`),  and the editor to help controlling the canvas and the prototype presentation [`/boldo/editor`](`/boldo/editor`)
+For easy testing and iteration, To be easy to test and iterate we are using a single repository with four touchpoints: the prototype you are working on [`./project`](./project), the scripts to fetch and parse Figma [`boldo/scripts`](boldo/scripts), the components with methods and syntax sugar [`/boldo/components`](./boldo/components),  and the editor to help controlling the canvas and the prototype presentation [`/boldo/editor`](/boldo/editor)
 
 The next steps are:
 
